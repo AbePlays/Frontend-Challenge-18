@@ -5,7 +5,7 @@
   import { NavbarItems } from "./helper";
 </script>
 
-<nav class="my-8 px-4">
+<nav class="my-8">
   <div class="flex justify-between items-center">
     <div class="flex items-center">
       <img src={Logo} class="cursor-pointer" alt="logo" />
