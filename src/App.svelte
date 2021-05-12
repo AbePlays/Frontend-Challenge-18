@@ -1,9 +1,10 @@
 <script lang="ts">
   import Tailwind from "./Tailwind.svelte";
+  import Navbar from "./containers/Navbar";
 </script>
 
 <Tailwind />
-<h1 class="text-cyan">Hello world</h1>
+<Navbar />
 
 <style>
 </style>
