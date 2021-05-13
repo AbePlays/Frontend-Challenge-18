@@ -3,7 +3,9 @@
   import Button from "../../components/Button";
 </script>
 
-<main class="md:flex md:flex-row-reverse md:gap-4 md:items-center md:pt-8">
+<main
+  class="md:flex md:flex-row-reverse md:gap-4 md:items-center md:pt-8 md:pb-20 px-4"
+>
   <div class="max-w-md mx-auto md:max-w-full">
     <img src={Hero} alt="person sitting on a desk and working" />
   </div>

@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: ["./src/**/*.svelte"],
@@ -12,6 +13,7 @@ module.exports = {
       "very-dark-blue": "hsl(255, 11%, 22%)",
       "very-dark-violet": "hsl(260, 8%, 14%)",
       white: "hsl(0, 100%, 100%)",
+      "light-gray": colors.gray[100],
     },
     extend: {
       fontFamily: {
