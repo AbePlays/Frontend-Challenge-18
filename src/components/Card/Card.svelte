@@ -6,9 +6,9 @@
 </script>
 
 <div
-  class="{'md:translate-y-' +
+  class="{'md:mt-' +
     (id - 1) *
-      8} bg-white rounded shadow p-6 pt-0 text-center max-w-sm md:text-left mx-auto md:transform "
+      8} bg-white rounded shadow p-6 pt-0 text-center max-w-sm md:text-left mx-auto"
 >
   <div
     class="bg-dark-violet rounded-full flex justify-center items-center w-max p-4 mx-auto md:mx-0 transform -translate-y-10"

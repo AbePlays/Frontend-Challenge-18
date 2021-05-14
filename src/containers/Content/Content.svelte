@@ -12,7 +12,7 @@
     </p>
   </div>
 
-  <div class="md:flex md:gap-8 md:justify-center">
+  <div class="md:flex md:gap-8 md:justify-between">
     {#each statistics as statistic}
       <div class="mt-20">
         <Card
