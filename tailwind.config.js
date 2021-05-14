@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: (theme) => ({
+        "desktop-pattern": "url('/img/bg-boost-desktop.svg')",
+      }),
     },
   },
   variants: {},
