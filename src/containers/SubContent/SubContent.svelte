@@ -6,5 +6,7 @@
   <h1 class="text-3xl md:text-4xl text-white font-bold mb-6">
     Boost your links today
   </h1>
-  <Button content="Get Started" shape="pill" variant="filled" />
+  <div class="bg-white w-max mx-auto rounded-full">
+    <Button content="Get Started" shape="pill" variant="filled" />
+  </div>
 </div>

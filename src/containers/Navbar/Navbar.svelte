@@ -11,7 +11,9 @@
       <img src={Logo} class="cursor-pointer" alt="logo" />
       <ul class="hidden md:block md:ml-8 space-x-4 text-grayish-violet">
         {#each NavbarItems as item}
-          <li class="inline-block">
+          <li
+            class="inline-block hover:text-very-dark-violet transition-colors duration-300"
+          >
             <a href="/">
               {item}
             </a>

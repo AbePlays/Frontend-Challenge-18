@@ -15,7 +15,7 @@
     {shape === 'pill' ? 'rounded-full' : 'rounded-md'}
     {width && 'w-full'}
     {height && 'h-full'}
-    "
+    hover:opacity-50"
   on:click={onPress}
 >
   {content}
