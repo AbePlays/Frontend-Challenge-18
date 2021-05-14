@@ -21,6 +21,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "desktop-pattern": "url('/img/bg-boost-desktop.svg')",
+        "shorten-box-pattern": "url('/img/bg-shorten-desktop.svg')",
       }),
     },
   },
