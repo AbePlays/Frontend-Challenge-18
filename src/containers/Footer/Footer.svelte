@@ -1,10 +1,3 @@
-<script>
-  import Twitter from "../../assets/icon-twitter.svg";
-  import Facebook from "../../assets/icon-facebook.svg";
-  import Pinterest from "../../assets/icon-pinterest.svg";
-  import Instagram from "../../assets/icon-instagram.svg";
-</script>
-
 <div
   class="bg-very-dark-violet text-white text-center py-12 px-4 space-y-12 md:space-y-0 md:flex md:justify-between md:items-start md:gap-8"
 >
