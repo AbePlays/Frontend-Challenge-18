@@ -1,4 +1,5 @@
 <script>
+  import LinkBox from "../../components/LinkBox";
   import Card from "../../components/Card";
   import ShortenLink from "../ShortenLink";
   import { statistics } from "./helper";
@@ -6,6 +7,7 @@
 
 <div class="bg-light-gray px-4 pb-20">
   <ShortenLink />
+  <LinkBox />
   <div class="text-center pt-8">
     <h1 class="text-3xl text-dark-violet font-bold ">Advanced Statistics</h1>
     <p class="text-grayish-violet mt-4 max-w-lg mx-auto">
