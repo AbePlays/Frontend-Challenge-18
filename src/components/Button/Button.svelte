@@ -4,7 +4,7 @@
   export let shape: "pill" | "normal" = "normal";
   export let width: "" | "full" = "";
   export let height: "" | "full" = "";
-  export let onPress: () => null;
+  export let onPress: () => any;
 </script>
 
 <button
