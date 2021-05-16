@@ -3,10 +3,13 @@
   import Button from "../../components/Button";
   import { isValidLink } from "./helper";
 
+  export let isFetching: boolean;
   let linkInput = "";
   let valid = true;
-  const dispatch = createEventDispatcher();
 
+  $: buttonText = isFetching === false ? "Shorten it!" : "Shortening";
+
+  const dispatch = createEventDispatcher();
   const submitHandler = () => {
     valid = isValidLink(linkInput);
     console.log(linkInput, valid);
@@ -42,10 +45,11 @@
 
     <div class="bg-white h-14 w-full md:w-40 mx-auto rounded-lg">
       <Button
-        content="Shorten it!"
+        content={buttonText}
         variant="filled"
         twClass="w-full h-full"
         onPress={submitHandler}
+        isDisabled={isFetching}
       />
     </div>
   </div>

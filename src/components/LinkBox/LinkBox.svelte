@@ -6,11 +6,16 @@
   export let shortenedUrl: string;
   let copyOperationCompleted = false;
 
-  let onPress = async () => {
+  const onPress = async () => {
     copyOperationCompleted = await copyText(
       copyOperationCompleted,
       shortenedUrl
     );
+    if (copyOperationCompleted) {
+      setTimeout(() => {
+        copyOperationCompleted = false;
+      }, 3000);
+    }
   };
 </script>
 
@@ -27,7 +32,7 @@
         content={copyOperationCompleted ? "Copied!" : "Copy"}
         variant="filled"
         shape="normal"
-        width="full"
+        twClass={copyOperationCompleted ? "bg-dark-violet" : ""}
         {onPress}
       />
     </div>

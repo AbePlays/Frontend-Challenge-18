@@ -3,6 +3,7 @@
   export let shape: "pill" | "normal" = "normal";
   export let variant: "plain" | "filled" = "plain";
   export let twClass: string = "";
+  export let isDisabled: boolean = false;
   export let onPress = () => {};
 
   $: bgColor = variant === "filled" ? "bg-cyan px-6 py-2" : "";
@@ -18,6 +19,7 @@
     twClass,
   ].join(' ')}"
   on:click={onPress}
+  disabled={isDisabled}
 >
   {content}
 </button>

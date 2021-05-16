@@ -7,12 +7,14 @@
   import Layout from "../../components/Layout";
 
   let data: Link[] = [];
+  let isLoading = false;
 
   const addLinkHandler = async (e: { detail: { url: string } }) => {
+    isLoading = true;
     const originalUrl = e.detail.url;
     const shortenedUrl = await fetchShortenedUrl(originalUrl);
     console.log(shortenedUrl);
-
+    isLoading = false;
     data = [...data, { originalUrl, shortenedUrl }];
   };
 </script>
@@ -20,7 +22,7 @@
 <div class="bg-light-gray pb-20">
   <Layout>
     <div class="transform md:-translate-y-16 -translate-y-20">
-      <ShortenLink on:addLink={addLinkHandler} />
+      <ShortenLink isFetching={isLoading} on:addLink={addLinkHandler} />
       <div class="mt-4 space-y-4">
         {#each data as item}
           <LinkBox url={item.originalUrl} shortenedUrl={item.shortenedUrl} />
