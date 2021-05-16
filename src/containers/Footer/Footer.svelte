@@ -18,13 +18,19 @@
     <div>
       <h1>Features</h1>
       <ul class="text-grayish-violet mt-6 space-y-2">
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Link Shortening</a>
         </li>
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Branded Links</a>
         </li>
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Analytics</a>
         </li>
       </ul>
@@ -32,13 +38,19 @@
     <div>
       <h1>Resources</h1>
       <ul class="text-grayish-violet mt-6 space-y-2">
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Blog</a>
         </li>
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Developers</a>
         </li>
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Support</a>
         </li>
       </ul>
@@ -46,16 +58,24 @@
     <div>
       <h1>Company</h1>
       <ul class="text-grayish-violet mt-6 space-y-2">
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">About</a>
         </li>
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Our Team</a>
         </li>
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Career</a>
         </li>
-        <li class="hover:text-cyan transition-colors duration-300 w-max">
+        <li
+          class="hover:text-cyan transition-colors duration-300 w-max mx-auto md:w-auto"
+        >
           <a href="/">Support</a>
         </li>
       </ul>
