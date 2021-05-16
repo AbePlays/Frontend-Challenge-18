@@ -75,14 +75,14 @@
         </ul>
         <div class="flex flex-col space-y-6 pt-6 mt-6">
           <div class="w-min mx-auto">
-            <Button content="Login" />
+            <Button content="Login" twClass="text-white" />
           </div>
           <div class="bg-white rounded-full">
             <Button
               content="Sign Up"
               variant="filled"
               shape="pill"
-              width="full"
+              twClass="w-full"
             />
           </div>
         </div>
