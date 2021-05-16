@@ -1,6 +1,5 @@
-<script>
+<script lang="ts">
   import { createEventDispatcher } from "svelte";
-
   import Button from "../../components/Button";
   import { isValidLink } from "./helper";
 
@@ -13,24 +12,23 @@
     console.log(linkInput, valid);
 
     if (valid) {
-      // TODO:- Shorten linnk
       dispatch("addLink", { url: linkInput });
     }
   };
 </script>
 
 <div
-  class="bg-dark-violet p-10 rounded bg-shorten-box-pattern bg-no-repeat bg-cover"
+  class="bg-dark-violet p-10 rounded-lg bg-shorten-box-pattern bg-no-repeat bg-cover"
 >
-  <div class="md:flex md:justify-between md:gap-6 max-w-screen-lg mx-auto">
+  <div class="md:flex md:justify-between md:gap-6">
     <div class="w-full">
       <input
         type="url"
         class="
-        rounded-lg flex-1 p-2 h-14 pl-6 mb-2 md:mb-0 md:p-3 w-full outline-none placeholder-opacity-50
+        rounded-lg flex-1 p-2 h-14 pl-6 mb-2 md:mb-0 md:p-3 md:pl-8 w-full outline-none placeholder-opacity-50
         {!valid
           ? 'placeholder-red text-red border-2 border-red'
-          : 'placeholder-gray text-gray'}
+          : 'placeholder-grayish-violet text-grayish-violet'}
       "
         placeholder="Shorten a link here..."
         bind:value={linkInput}

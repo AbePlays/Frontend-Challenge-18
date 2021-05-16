@@ -1,6 +1,6 @@
-import Recognition from "../../assets/icon-brand-recognition.svg";
-import Records from "../../assets/icon-detailed-records.svg";
-import Custom from "../../assets/icon-fully-customizable.svg";
+import Recognition from "/img/icon-brand-recognition.svg";
+import Records from "/img/icon-detailed-records.svg";
+import Custom from "/img/icon-fully-customizable.svg";
 import type { Statistic } from "./types";
 
 export const statistics: Statistic[] = [

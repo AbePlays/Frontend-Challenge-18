@@ -1,7 +1,6 @@
 <script lang="ts">
   import Tailwind from "./Tailwind.svelte";
   import Navbar from "./containers/Navbar";
-  import Layout from "./components/Layout";
   import Intro from "./containers/Intro";
   import Content from "./containers/Content";
   import Footer from "./containers/Footer";
@@ -9,13 +8,10 @@
 </script>
 
 <Tailwind />
-<Layout>
+<div class="max-w-screen-2xl mx-auto">
   <Navbar />
   <Intro />
   <Content />
   <SubContent />
   <Footer />
-</Layout>
-
-<style>
-</style>
+</div>
