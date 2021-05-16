@@ -1,13 +1,7 @@
 import Recognition from "../../assets/icon-brand-recognition.svg";
 import Records from "../../assets/icon-detailed-records.svg";
 import Custom from "../../assets/icon-fully-customizable.svg";
-
-type Statistic = {
-  id: number;
-  imgSrc: string;
-  title: string;
-  content: string;
-};
+import type { Statistic } from "./types";
 
 export const statistics: Statistic[] = [
   {
@@ -32,3 +26,18 @@ export const statistics: Statistic[] = [
       "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
   },
 ];
+
+export const fetchShortenedUrl = async (url: string): Promise<any> => {
+  try {
+    const result = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
+    const data = await result.json();
+    if (result.ok) {
+      const shortenedUrl = data.result.full_short_link;
+      return shortenedUrl;
+    } else {
+      throw new Error("Could not fetch data");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};

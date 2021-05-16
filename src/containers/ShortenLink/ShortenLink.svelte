@@ -1,9 +1,12 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+
   import Button from "../../components/Button";
   import { isValidLink } from "./helper";
 
   let linkInput = "";
   let valid = true;
+  const dispatch = createEventDispatcher();
 
   const submitHandler = () => {
     valid = isValidLink(linkInput);
@@ -11,12 +14,13 @@
 
     if (valid) {
       // TODO:- Shorten linnk
+      dispatch("addLink", { url: linkInput });
     }
   };
 </script>
 
 <div
-  class="bg-dark-violet p-10 rounded bg-shorten-box-pattern bg-no-repeat bg-cover transform md:-translate-y-16 -translate-y-20"
+  class="bg-dark-violet p-10 rounded bg-shorten-box-pattern bg-no-repeat bg-cover"
 >
   <div class="md:flex md:justify-between md:gap-6 max-w-screen-lg mx-auto">
     <div class="w-full">
