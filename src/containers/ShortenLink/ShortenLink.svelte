@@ -23,7 +23,10 @@
 <div
   class="bg-dark-violet p-10 rounded-lg bg-shorten-box-pattern bg-no-repeat bg-cover"
 >
-  <div class="md:flex md:justify-between md:gap-6">
+  <form
+    class="md:flex md:justify-between md:gap-6"
+    on:submit|preventDefault={submitHandler}
+  >
     <div class="w-full">
       <input
         type="url"
@@ -43,7 +46,7 @@
       {/if}
     </div>
 
-    <div class="bg-white h-14 w-full md:w-40 mx-auto rounded-lg">
+    <div class="bg-white h-14 w-full md:w-44 mx-auto rounded-lg">
       <Button
         content={buttonText}
         variant="filled"
@@ -52,5 +55,5 @@
         isDisabled={isFetching}
       />
     </div>
-  </div>
+  </form>
 </div>

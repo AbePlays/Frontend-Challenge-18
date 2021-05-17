@@ -15,7 +15,7 @@
     const shortenedUrl = await fetchShortenedUrl(originalUrl);
     console.log(shortenedUrl);
     isLoading = false;
-    data = [...data, { originalUrl, shortenedUrl }];
+    data = [{ originalUrl, shortenedUrl }, ...data];
   };
 </script>
 
