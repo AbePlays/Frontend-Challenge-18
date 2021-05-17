@@ -1,4 +1,5 @@
 <script>
+  import { slide } from "svelte/transition";
   import Button from "../../components/Button";
   import Layout from "../../components/Layout";
   import { NavbarItems } from "./helper";
@@ -60,6 +61,7 @@
     </div>
     {#if isMobileNavbarOpen}
       <div
+        transition:slide
         class="bg-dark-violet p-8 rounded-lg mt-6 divide-y divide-white divide-opacity-20 md:hidden"
       >
         <ul class="space-y-8 text-center text-white">
